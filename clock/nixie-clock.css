@@ -1,0 +1,35 @@
+#nixie-clock {
+    display: flex;
+    width: fit-content;
+    margin: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tube-separator {
+    width: 5rem;
+}
+
+.nixie-tube {
+    position: relative;
+}
+.nixie-tube > div {
+    position: absolute;
+
+    font-size: 15rem;
+    font-family: IosevkaThinExtended;
+
+    opacity: 20%;
+}
+.nixie-tube > .tube6 {
+    position: relative;
+}
+
+.nixie-tube > div[lit='0'] {
+    color: black;
+    text-shadow: 0 0 0.4rem #0004;
+}
+.nixie-tube > div[lit='1'] {
+    color: rgb(255, 145, 0);
+    text-shadow: 0 0 2rem rgb(255, 145, 0);
+    opacity: 100%;
+}

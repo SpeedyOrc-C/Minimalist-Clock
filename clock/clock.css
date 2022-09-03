@@ -1,0 +1,25 @@
+@import url('../font/font.css');
+
+@import url('text-clock.css');
+@import url('analog-clock.css');
+@import url('nixie-clock.css');
+
+body {
+    background-color: #222;
+}
+
+.clock-page {
+    position: relative;
+    height: 100vh;
+}
+
+.setting {
+    position: absolute;
+
+    color: #eee;
+    font-family: sans-serif;
+    user-select: none; -webkit-user-select: none;
+}
+.setting:hover {
+    color: #eee;
+}

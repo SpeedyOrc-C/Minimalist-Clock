@@ -1,3 +1,8 @@
+# Remove these lines when you fork
+D:\\Programs\\nodejs\\cache_modules
+D:\\Programs\\nodejs\\global_modules
+audio/tick.flp
+
 # Logs
 logs
 *.log

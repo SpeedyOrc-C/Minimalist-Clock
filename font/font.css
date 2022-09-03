@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Iosevka;
+    src: url('Iosevka.ttf');
+}
+
+@font-face {
+    font-family: IosevkaExtended;
+    src: url('Iosevka-Extended.ttf');
+}
+
+@font-face {
+    font-family: IosevkaThinExtended;
+    src: url('Iosevka-Thin-Extended.ttf');
+}

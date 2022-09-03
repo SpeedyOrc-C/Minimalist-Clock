@@ -1,0 +1,22 @@
+#text-clock {
+    width: fit-content;
+    display: flex;
+    position: absolute;
+    margin: 50vh 50vw;
+    transform: translate(-50%, -50%);
+
+    color: #eee;
+
+    font-size: 15rem;
+    font-family: Iosevka;
+}
+.text-clock-separator {
+    transform: translateY(-1.5rem);
+
+}
+.text-clock-separator[blink='0'] {
+    color: #333;
+}
+.text-clock-separator[blink='1'] {
+    color: #444;
+}

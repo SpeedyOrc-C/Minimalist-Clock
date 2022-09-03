@@ -1,0 +1,56 @@
+#analog-clock {
+    position: absolute;
+    margin: 50vh 50vw;
+    transform: translate(-50%, -50%);
+
+    height: 90vh;
+    width: 90vh;
+    border-radius: 45vh;
+
+    background-color: #333;
+}
+#analog-clock-bullet {
+    position: absolute;
+    margin: 50%;
+    transform: translate(-50%, -50%);
+    border: 2vh solid #eee;
+    border-radius: 2vh;
+}
+#analog-clock-hour-arm-pivot,
+#analog-clock-minute-arm-pivot,
+#analog-clock-second-arm-pivot {
+    position: absolute;
+    width: 0; height: 0;
+    margin: 50%;
+    transform: translate(-50%, -50%);
+}
+#analog-clock-second-arm-pivot {
+    transition: transform;
+    transition-timing-function: ease-in;
+    transition-duration: 0.1s;
+}
+#analog-clock-second-arm {
+    position: absolute;
+    margin: 50%;
+    transform: translate(-10%, 0);
+    
+    width: 45vh;
+    outline: 2px solid rgb(196, 127, 0);
+    box-shadow: 0 0 2px 4px #0002;
+}
+#analog-clock-minute-arm {
+    position: absolute;
+    margin: 50%;
+    
+    width: 40vh;
+    outline: 7px solid #ddd;
+    box-shadow: 0 0 6px 12px #0002;
+}
+#analog-clock-hour-arm {
+    position: absolute;
+    margin: 50%;
+    
+    width: 25vh;
+    outline: 7px solid #ddd;
+    box-shadow: 0 0 6px 12px #0002;
+}

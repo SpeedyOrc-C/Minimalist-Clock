@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Clock</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+
+<body>
+    <audio src="../audio/tick.wav" id="audio-tick"></audio>
+
+    <div class="clock-page">
+        <div id="text-clock">
+            <div id="text-clock-hour"></div>
+            <div class="text-clock-separator">:</div>
+            <div id="text-clock-minute"></div>
+            <div class="text-clock-separator">:</div>
+            <div id="text-clock-second"></div>
+        </div>
+    </div>
+
+    <div class="clock-page">
+        <div id="analog-clock">
+            <div id="analog-clock-hour-arm-pivot">
+                <div id="analog-clock-hour-arm"></div>
+            </div>
+            <div id="analog-clock-minute-arm-pivot">
+                <div id="analog-clock-minute-arm"></div>
+            </div>
+            <div id="analog-clock-second-arm-pivot">
+                <div id="analog-clock-second-arm"></div>
+            </div>
+            <div id="analog-clock-bullet"></div>
+        </div>
+    </div>
+
+    <div class="clock-page">
+        <div id="nixie-clock">
+            <!--
+                Order of the tubes
+                [OUTSIDE] 6 7 5 8 4 3 9 2 0 1 [INSIDE]
+            -->
+            <div id="digit1" class="nixie-tube">
+                <div class="tube1" lit="0">1</div>
+                <div class="tube0" lit="0">0</div>
+                <div class="tube2" lit="0">2</div>
+                <div class="tube9" lit="0">9</div>
+                <div class="tube3" lit="0">3</div>
+                <div class="tube4" lit="0">4</div>
+                <div class="tube8" lit="0">8</div>
+                <div class="tube5" lit="0">5</div>
+                <div class="tube7" lit="0">7</div>
+                <div class="tube6" lit="0">6</div>
+            </div>
+            <div id="digit2" class="nixie-tube">
+                <div class="tube1" lit="0">1</div>
+                <div class="tube0" lit="0">0</div>
+                <div class="tube2" lit="0">2</div>
+                <div class="tube9" lit="0">9</div>
+                <div class="tube3" lit="0">3</div>
+                <div class="tube4" lit="0">4</div>
+                <div class="tube8" lit="0">8</div>
+                <div class="tube5" lit="0">5</div>
+                <div class="tube7" lit="0">7</div>
+                <div class="tube6" lit="0">6</div>
+            </div>
+            <div class="tube-separator"></div>
+            <div id="digit3" class="nixie-tube">
+                <div class="tube1" lit="1">1</div>
+                <div class="tube0" lit="0">0</div>
+                <div class="tube2" lit="0">2</div>
+                <div class="tube9" lit="0">9</div>
+                <div class="tube3" lit="0">3</div>
+                <div class="tube4" lit="0">4</div>
+                <div class="tube8" lit="0">8</div>
+                <div class="tube5" lit="0">5</div>
+                <div class="tube7" lit="0">7</div>
+                <div class="tube6" lit="0">6</div>
+            </div>
+            <div id="digit4" class="nixie-tube">
+                <div class="tube1" lit="0">1</div>
+                <div class="tube0" lit="1">0</div>
+                <div class="tube2" lit="0">2</div>
+                <div class="tube9" lit="0">9</div>
+                <div class="tube3" lit="0">3</div>
+                <div class="tube4" lit="0">4</div>
+                <div class="tube8" lit="0">8</div>
+                <div class="tube5" lit="0">5</div>
+                <div class="tube7" lit="0">7</div>
+                <div class="tube6" lit="0">6</div>
+            </div>
+            <div class="tube-separator"></div>
+            <div id="digit5" class="nixie-tube">
+                <div class="tube1" lit="0">1</div>
+                <div class="tube0" lit="0">0</div>
+                <div class="tube2" lit="1">2</div>
+                <div class="tube9" lit="0">9</div>
+                <div class="tube3" lit="0">3</div>
+                <div class="tube4" lit="0">4</div>
+                <div class="tube8" lit="0">8</div>
+                <div class="tube5" lit="0">5</div>
+                <div class="tube7" lit="0">7</div>
+                <div class="tube6" lit="0">6</div>
+            </div>
+            <div id="digit6" class="nixie-tube">
+                <div class="tube1" lit="0">1</div>
+                <div class="tube0" lit="0">0</div>
+                <div class="tube2" lit="0">2</div>
+                <div class="tube9" lit="1">9</div>
+                <div class="tube3" lit="0">3</div>
+                <div class="tube4" lit="0">4</div>
+                <div class="tube8" lit="0">8</div>
+                <div class="tube5" lit="0">5</div>
+                <div class="tube7" lit="0">7</div>
+                <div class="tube6" lit="0">6</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="setting" style="top: 1rem">
+        <input type="checkbox" id="checkbox-play-tick">🔈
+    </div>
+</body>
+
+<script src="clock.js" type="module"></script>
+
+</html>
